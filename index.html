@@ -1,0 +1,513 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>마이 미니홈피183</title><meta name="description" content="마이 미니홈피183 ♡ 다이어리와 사진첩이 있는 나만의 작은 공간"><meta property="og:type" content="website"><meta property="og:site_name" content="마이 미니홈피183"><meta property="og:title" content="마이 미니홈피183 ♡"><meta property="og:description" content="나의 작은 공간에 놀러 와 ♡ 다이어리 · 사진첩 · 추억"><meta property="og:image" content="/preview.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="마이 미니홈피183 ♡"><meta name="twitter:description" content="나의 작은 공간에 놀러 와 ♡"><meta name="twitter:image" content="/preview.png"><style>
+:root{--accent:#ed8cab;--light:#ffe6ee;--wall:#f6b9cf;--ink:#49444f}*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:'Trebuchet MS','Apple SD Gothic Neo',sans-serif;background:radial-gradient(circle at 15% 20%,#fff8 0 2px,transparent 3px) 0 0/32px 32px,linear-gradient(140deg,var(--wall),#e9d8f4);min-height:100vh;padding:38px 14px}.shell{max-width:1040px;margin:auto;background:#f6f6f8;border:3px solid #fff;border-radius:22px;box-shadow:0 18px 55px #60415c40;padding:22px;outline:2px solid #ffffff80}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}.brand{font-size:25px;font-weight:900;letter-spacing:1px;color:#6a5266}.counter{font-size:12px;color:#777}.counter b{color:var(--accent)}.layout{display:grid;grid-template-columns:250px 1fr 115px;gap:14px;min-height:580px}.panel{background:white;border:1px solid #d9d5de;border-radius:13px;padding:17px;box-shadow:inset 0 0 0 4px #faf9fc}.profile{display:flex;flex-direction:column;gap:12px}.avatar{height:205px;border-radius:8px;background:var(--light);display:grid;place-items:center;font-size:72px;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.mini-title{font-weight:900;color:var(--accent)}.muted{font-size:12px;color:#999}.mood{background:#faf7fa;padding:9px;border-radius:8px;font-size:13px}.profile p{font-size:13px;line-height:1.8;margin:0;white-space:pre-wrap}.content{min-width:0}.section{display:none}.section.active{display:block}.heading{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--light);padding-bottom:12px;margin-bottom:16px}.heading h2{font-size:19px;margin:0}.room{height:300px;border:2px solid #e5dce4;border-radius:12px;background:linear-gradient(#fff5f9 70%,#eedce6 70%);display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}.room .character{font-size:95px;filter:drop-shadow(0 7px 2px #bd9cb54d)}.room .decor{position:absolute;top:25px;right:35px;font-size:47px}.room .floor{position:absolute;bottom:20px;left:30px;font-size:47px}.note{font-size:13px;color:#777;line-height:1.7}.menu{display:flex;flex-direction:column;gap:9px;padding-top:22px}.menu button{background:var(--accent);border:2px solid #fff;color:white;border-radius:0 10px 10px 0;padding:13px 6px;font-weight:800;cursor:pointer;box-shadow:1px 2px 0 #b8a8b3}.menu button.active{background:#77657d}.menu button:hover{filter:brightness(.95)}button,.btn{font:inherit}.btn{background:var(--accent);color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer;font-weight:700}.btn.secondary{background:#eee;color:#5d5560}.field,textarea,select{width:100%;border:1px solid #ddd4dd;border-radius:8px;padding:10px;font:inherit;background:#fff;color:var(--ink)}textarea{min-height:92px;resize:vertical}.form{display:grid;gap:10px;margin-bottom:20px}.entry{background:#fffcfe;border:1px solid #eee5eb;border-radius:10px;padding:13px;margin:10px 0;overflow-wrap:anywhere}.entry-head{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#999;margin-bottom:8px}.entry-head strong{color:var(--accent);font-size:14px}.entry p{white-space:pre-wrap;line-height:1.6;font-size:14px;margin:0}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo{border:1px solid #eee;border-radius:9px;padding:8px}.photo img{width:100%;height:155px;object-fit:cover;border-radius:6px}.photo p{font-size:12px;margin:8px 0 2px}.setting-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.setting-grid label{font-size:13px;font-weight:bold;display:grid;gap:5px}.hint{font-size:12px;color:#8c8290}.footer{text-align:center;font-size:12px;color:#8e8190;margin-top:14px}.status{font-size:12px;color:#766b76}.tiny{font-size:11px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}@media(max-width:800px){body{padding:10px}.shell{padding:12px}.layout{grid-template-columns:1fr}.profile{display:grid;grid-template-columns:105px 1fr;align-items:center}.avatar{height:110px;font-size:45px;grid-row:span 4}.menu{grid-row:2;flex-direction:row;overflow-x:auto;padding:0}.menu button{white-space:nowrap;border-radius:8px;padding:10px}.content{grid-row:3}.setting-grid{grid-template-columns:1fr}.top{flex-wrap:wrap}.brand{font-size:20px}}
+
+/* Slim / airy visual refresh — original functionality unchanged */
+:root{--ink:#514b55}
+body{font-family:'Apple SD Gothic Neo','Noto Sans KR','Helvetica Neue',Arial,sans-serif;padding:45px 16px;background:radial-gradient(circle at 20% 25%,#ffffff99 0 1px,transparent 2px) 0 0/36px 36px,linear-gradient(135deg,var(--wall),#e9e0f1);font-weight:400;letter-spacing:-.025em}
+.shell{max-width:1000px;border:1px solid #ffffffcc;border-radius:13px;padding:18px 19px 15px;box-shadow:0 12px 36px #60415c20;outline:1px solid #ffffff55}
+.top{margin-bottom:13px;padding:0 3px}.brand{font-size:19px;font-weight:600;letter-spacing:.015em}.brand span:not(#customBrandText){font-weight:400!important;font-size:11px!important}.counter{font-size:11px;letter-spacing:.025em}
+.layout{grid-template-columns:215px minmax(0,1fr) 94px;gap:9px;min-height:540px}
+.panel{border:1px solid #e6e0e7;border-radius:6px;padding:16px;box-shadow:none}
+.profile{gap:11px}.avatar{height:175px;border-radius:3px;font-size:60px}.mini-title{font-size:13px;font-weight:600}.mood{border-radius:3px;padding:8px 9px;font-size:12px;background:#faf8fa}.profile p{font-size:12px;line-height:1.85}.muted,.hint{font-size:11px}
+.heading{border-bottom:1px solid #eee4eb;padding-bottom:10px;margin-bottom:14px}.heading h2{font-size:16px;font-weight:600;letter-spacing:-.035em}
+.room{height:275px;border:1px solid #e8e1e8;border-radius:4px}.room .character{font-size:83px}.room .decor,.room .floor{font-size:39px}.note{font-size:12px;line-height:1.8}
+.menu{gap:5px;padding-top:19px}.menu button{border:1px solid #ffffffaa;border-left:0;border-radius:0 5px 5px 0;padding:11px 3px;font-size:11px;font-weight:500;box-shadow:none;letter-spacing:-.04em}.menu button.active{background:#756a79}
+.btn{border-radius:4px;padding:9px 12px;font-size:12px;font-weight:500}.field,textarea,select{border:1px solid #e4dde4;border-radius:4px;padding:9px 10px;font-size:12px}textarea{min-height:88px}.form{gap:9px}.entry{border-radius:4px;padding:12px;background:#fff}.entry-head strong{font-size:12px;font-weight:600}.entry p{font-size:12px;line-height:1.8}.photo{border-radius:4px;padding:7px}.photo img{border-radius:2px}.setting-grid label{font-size:12px;font-weight:500}.footer{font-size:10px;margin-top:12px}
+@media(max-width:800px){body{padding:12px 8px}.shell{padding:12px}.layout{grid-template-columns:1fr;gap:9px}.profile{grid-template-columns:94px 1fr}.avatar{height:102px;font-size:42px}.menu{padding:0;gap:5px}.menu button{border:1px solid #ffffffaa;border-radius:4px;padding:9px 10px;font-size:11px}.brand{font-size:17px}.room{height:245px}}
+
+/* Soft rounded refinement: keep the slim proportions */
+.shell{border-radius:26px;box-shadow:0 12px 36px #60415c20}
+.panel{border-radius:18px}
+.avatar{border-radius:15px}.mood{border-radius:13px}
+.room{border-radius:19px}.menu button{border-radius:0 16px 16px 0}
+.btn{border-radius:999px}.field,textarea,select{border-radius:13px}
+.entry{border-radius:15px}.photo{border-radius:15px}.photo img{border-radius:11px}
+@media(max-width:800px){.shell{border-radius:21px}.panel{border-radius:17px}.menu button{border-radius:999px}}
+
+/* 미니룸 편집기: 기존 스타일과 기능 유지 */
+.room{background:linear-gradient(to bottom,var(--room-wall,#fff5fa) 0 70%,var(--room-floor,#ead8e2) 70% 100%);touch-action:none;user-select:none}
+#roomObjects{position:absolute;inset:0;pointer-events:none}
+.room-object{position:absolute;display:flex;align-items:center;justify-content:center;transform:translate(-50%,-50%);cursor:grab;touch-action:none;pointer-events:auto;line-height:1;filter:drop-shadow(0 4px 3px #6e4e6222)}
+.room-object:active{cursor:grabbing}.room-object.selected{outline:1px dashed #b994b0;border-radius:10px;background:#ffffff40}
+.room-editor{padding:14px;border:1px solid #eee3ec;border-radius:16px;background:#fffafd;display:grid;gap:8px}
+.object-edit-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px;border:1px solid #f0e7ed;border-radius:12px;background:white}
+.object-edit-row input[type=text]{width:75px}.object-edit-row input[type=range]{width:110px;max-width:100%}.object-edit-row .btn{padding:6px 9px;font-size:12px}
+
+/* 홈 화면에는 사진첩의 최근 사진을 표시 */
+.home-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.home-photo{min-width:0;background:#fff;border:1px solid #eee4ec;border-radius:17px;padding:7px;overflow:hidden}
+.home-photo img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}
+.home-photo p{font-size:12px;color:#777;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:8px 4px 3px}
+.home-empty{grid-column:1/-1;min-height:280px;border:1px dashed #e9dce5;border-radius:20px;background:#fffafd;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;color:#8a7c87;padding:20px}
+.home-empty-icon{font-size:40px;color:var(--accent)}.home-empty p{font-size:13px}
+.room-editor .room{height:260px;margin:12px 0}
+@media(max-width:600px){.home-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}}
+
+/* 메인 사진과 음악, 이름, 링크 */
+.home-feature{display:grid;grid-template-columns:minmax(130px,210px) 1fr;gap:16px;background:#fffafd;border:1px solid #eee1eb;border-radius:20px;padding:15px;margin-bottom:19px;align-items:center}
+.feature-cover{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:15px;cursor:zoom-in;background:#f5eaf2}
+.feature-placeholder{display:grid;place-items:center;font-size:40px;color:#b9a4b5}
+.feature-info{min-width:0;display:grid;gap:9px}.feature-name{font-size:19px;font-weight:700}.feature-line{font-size:12px;color:#8d8290}.feature-song{font-size:13px;line-height:1.7;overflow-wrap:anywhere}.feature-link{font-size:12px;color:#986b92;overflow-wrap:anywhere}.feature-info a{color:#956087;text-decoration:underline;text-underline-offset:3px}
+.home-gallery-title{font-size:13px;font-weight:700;margin:0 0 10px;color:#746575}
+@media(max-width:550px){.home-feature{grid-template-columns:110px 1fr;gap:11px;padding:11px}.feature-name{font-size:15px}}
+/* 홈 메인 70% / 아래 사진첩 30% */
+#home{min-height:720px} .home-body{display:grid;grid-template-rows:minmax(0,7fr) minmax(0,3fr);gap:16px;min-height:660px}
+.home-feature{margin-bottom:0;height:100%;grid-template-columns:minmax(0, 48%) minmax(0,1fr);align-items:center}
+.feature-cover{height:100%;max-height:390px;aspect-ratio:auto;object-fit:cover}
+#featureImageWrap{height:100%;max-height:390px;overflow:hidden}
+.home-album-section{min-height:0;overflow:auto}.home-gallery{max-height:205px;overflow:auto}
+.feature-memo{font-size:13px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;color:#766b78}
+@media(max-width:600px){#home{min-height:0}.home-body{min-height:600px}.home-feature{grid-template-columns:minmax(0,44%) 1fr}.feature-cover,#featureImageWrap{max-height:310px}}
+/* 사진 확대 보기 */
+.home-photo, .photo img{cursor:zoom-in}.home-photo:focus-visible,.photo img:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.photo-modal{position:fixed;inset:0;z-index:9999;background:rgba(35,29,40,.72);display:flex;align-items:center;justify-content:center;padding:24px}
+.photo-modal[hidden]{display:none}.photo-dialog{position:relative;width:min(760px,100%);max-height:92vh;overflow:auto;background:#fff;border:1px solid #eee0e9;border-radius:22px;padding:20px;box-shadow:0 20px 65px #21152550;text-align:center}
+.photo-dialog img{display:block;max-width:100%;max-height:70vh;width:auto;height:auto;object-fit:contain;margin:auto;border-radius:12px}
+.photo-dialog p{font-size:14px;line-height:1.7;color:#5c5260;margin:15px 35px 2px;white-space:pre-wrap;overflow-wrap:anywhere}
+.photo-close{position:absolute;right:12px;top:12px;background:#fff;border:1px solid #e6dce5;border-radius:50%;height:34px;width:34px;font-size:22px;cursor:pointer;color:#635969}
+@media(max-width:600px){.photo-modal{padding:12px}.photo-dialog{padding:14px}.photo-dialog img{max-height:65vh}}
+
+.diary-image{display:block;width:100%;max-height:390px;object-fit:contain;border-radius:12px;margin:12px 0 0;background:#fff6fa;cursor:zoom-in}.diary-date{font-size:12px;color:#998398;margin:0 0 8px}.diary-preview-img{width:130px;max-height:130px;object-fit:cover;border-radius:12px;margin-top:7px;display:block}
+/* LP 음악 플레이어: 프로필 사진 아래 정사각형 레코드 */
+.lp-player{margin-top:10px;padding:10px;border:1px solid #eee0e9;border-radius:18px;background:#fffafd;text-align:center;min-width:0}
+.lp-art{position:relative;width:100%;aspect-ratio:1/1;border-radius:15px;background:linear-gradient(135deg,#f4e4ec,#e8dbea);display:grid;place-items:center;overflow:hidden}
+.lp-disc{position:relative;width:88%;aspect-ratio:1/1;border-radius:50%;background:repeating-radial-gradient(circle at center,#18141a 0 3px,#30252e 4px 5px,#151116 6px 9px);box-shadow:0 8px 17px #24152144,inset 0 0 0 2px #554653;display:grid;place-items:center;animation:lpSpin 3s linear infinite;animation-play-state:paused}
+.lp-disc.playing{animation-play-state:running}
+.lp-label{width:42%;aspect-ratio:1/1;border-radius:50%;background:var(--accent);background-size:cover;background-position:center;border:3px solid #ffffff70;display:grid;place-items:center;color:#fff;font-size:23px;position:relative;overflow:hidden}
+.lp-label:after{content:'';position:absolute;width:8px;height:8px;background:#29222b;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid #eee}
+.lp-track{font-size:12px;font-weight:700;margin:10px 0 6px;overflow-wrap:anywhere}.lp-controls{display:flex;align-items:center;justify-content:center;gap:9px}.lp-controls button{width:36px;height:36px;border-radius:50%;border:1px solid #e7d3df;background:#fff;color:#8c617b;cursor:pointer}.lp-controls span{font-size:10px;color:#867b85;font-variant-numeric:tabular-nums}.lp-help{font-size:10px;color:#a093a0;margin-top:7px;line-height:1.5}
+@keyframes lpSpin{to{transform:rotate(360deg)}}
+@media(max-width:800px){.lp-player{grid-column:1/-1;max-width:190px;margin:4px auto}.lp-art{max-width:170px;margin:auto}}
+@media(prefers-reduced-motion:reduce){.lp-disc{animation-duration:12s}}
+
+/* 두 번째 스크린샷의 컴팩트한 데스크톱 비율 */
+body{min-width:0;padding:24px 14px;overflow-x:auto}
+.shell{width:1000px;max-width:100%;margin:0 auto}
+.layout{grid-template-columns:215px minmax(0,1fr) 94px;gap:9px;min-height:540px}
+#home{min-height:0}
+.home-body{min-height:0;display:block}
+.home-feature{height:auto;min-height:245px;grid-template-columns:minmax(0,48%) minmax(0,1fr);gap:15px;padding:15px;margin-bottom:18px}
+#featureImageWrap{height:245px;max-height:245px;min-height:0;overflow:hidden}
+.feature-cover{height:100%;width:100%;max-height:245px;min-height:0;object-fit:cover;aspect-ratio:auto}
+.home-album-section{min-height:0;overflow:visible}
+.home-gallery{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none;overflow:visible}
+.home-photo img{aspect-ratio:4/3;object-fit:cover}
+@media(max-width:800px){body{min-width:1020px;padding:12px 10px}.shell{width:1000px;max-width:none}.layout{display:grid;grid-template-columns:215px minmax(0,1fr) 94px;gap:9px}.profile{display:flex;flex-direction:column}.avatar{height:175px;grid-row:auto}.menu{grid-row:auto;flex-direction:column;padding-top:22px}.menu button{border-radius:999px;white-space:normal}.content{grid-row:auto}.home-feature{grid-template-columns:minmax(0,48%) minmax(0,1fr)}.home-body{min-height:0}.lp-player{grid-column:auto;max-width:none;margin-top:10px}.lp-art{max-width:none}.setting-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* 홈 화면 사진 비율 조정: 아래 썸네일은 프로필 사진 크기, 메인은 확대 */
+.home-feature{min-height:325px;grid-template-columns:minmax(0,56%) minmax(0,1fr);gap:15px}
+#featureImageWrap{height:325px;max-height:325px}
+.feature-cover{height:100%;max-height:325px;object-fit:cover}
+.home-gallery{grid-template-columns:repeat(3,minmax(0,175px));gap:12px;justify-content:start}
+.home-photo{width:100%;max-width:175px}
+.home-photo img{width:100%;aspect-ratio:1/1;object-fit:cover}
+@media(max-width:800px){.home-feature{grid-template-columns:minmax(0,56%) minmax(0,1fr)}.home-gallery{grid-template-columns:repeat(3,minmax(0,175px))}}
+
+.presence-line{display:flex;align-items:center;gap:6px;font-size:11px;color:#857b86}.presence-dot{width:9px;height:9px;background:#56bf8a;border-radius:50%;display:inline-block}.presence-dot.offline{background:#a8a4aa}.presence-line select{width:auto;font-size:11px;padding:3px 5px;border-radius:10px;margin-left:auto}.comment-area{text-align:left;border-top:1px solid #f0e6ef;margin-top:16px;padding-top:12px}.comment-area h3{font-size:14px}.comment-area .entry{margin:7px 0}.comment-area textarea{min-height:65px}.comment-area .form{margin-top:10px}.comment-area .entry p{font-size:12px}
+
+.friends-card{border:1px solid #eadde8;border-radius:16px;padding:14px;margin:12px 0;background:#fffafd}.friends-card .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.friends-card input{min-width:0;flex:1}.friend-note{font-size:12px;color:#857786;line-height:1.6}.friend-entry{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #eee3ed;padding:10px 0}.friend-entry a{color:var(--accent);overflow-wrap:anywhere}.friend-entry button{margin:2px}.friends-card .btn{font-size:12px}
+.photo-date-label{font-size:12px;color:#766b76;font-weight:600}.photo-date{font-size:11px;color:#948394;margin:5px 4px 3px}.photo-modal-date{font-size:12px;color:#9a8496;margin:8px 0 0}
+</style>
+<style id="customizableStyle">
+/* 추가 꾸미기 기능 — 원본 레이아웃 유지 */
+#featureSite{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#featureSite a.custom-link{display:inline-flex;align-items:center;text-decoration:none!important;
+  padding:5px 9px;border-radius:5px;border:1px solid #d9b8cd;font-size:11px;
+  max-width:100%;overflow-wrap:anywhere;line-height:1.4}
+#featureImageWrap{justify-self:stretch;align-self:center;max-width:100%;margin:auto}
+#featureImageWrap img{width:100%;height:100%;object-fit:cover}
+.custom-group{padding:13px;border:1px solid #eadde8;border-radius:12px;background:#fffafd;margin:9px 0}
+.custom-group h3{font-size:13px;margin:0 0 11px;color:#8c607d}
+.custom-link-row{display:grid;grid-template-columns:1fr 1.4fr 85px 85px auto;gap:6px;align-items:center;margin:7px 0}
+.custom-link-row input{min-width:0}
+.custom-link-row input[type=color]{width:100%;height:34px;padding:3px}
+.custom-link-row .btn{padding:7px 9px}
+.custom-group .setting-grid{margin:9px 0}
+.custom-group input[type=range]{width:100%}
+@media(max-width:800px){.custom-link-row{grid-template-columns:1fr 1fr}.custom-link-row button{grid-column:span 2}}
+</style>
+</head><body><div class="shell"><header class="top"><div class="brand"><span id="customBrandText">✿ 마이 미니홈피183</span> <span style="font-size:12px;color:#a79ba7">나만의 작은 공간</span></div><div class="counter">TODAY <b id="today">0</b> &nbsp; TOTAL <b id="total">0</b></div></header><div class="layout"><aside class="panel profile"><div class="avatar" id="avatar">🐰</div><div class="presence-line"><span class="presence-dot" id="presenceDot"></span><span id="presenceText">온라인</span><select id="presenceSelect" aria-label="상태 선택"><option value="online">온라인</option><option value="offline">오프라인</option></select></div><div class="mini-title" id="owner">마이 미니홈피183</div><div class="mood" id="mood">♪ 오늘의 기분 : 몽글몽글</div><p id="intro">어서 와! 내 작은 공간에 놀러 온 걸 환영해 ♡</p><div class="muted">✧ 오늘도 좋은 하루 보내기 ✧</div><div class="lp-player"><div class="lp-art" id="lpArt"><div class="lp-disc" id="lpDisc"><div class="lp-label" id="lpLabel">♫</div></div></div><div class="lp-track" id="lpTrack">오늘의 플레이리스트</div><div class="lp-controls"><button type="button" id="lpPlay" aria-label="노래 재생" title="재생 / 일시정지">▶</button><span id="lpTime">0:00 / 0:00</span></div><div class="lp-help" id="lpHelp">꾸미기에서 음악 파일을 등록해 줘 ♡</div><audio id="lpAudio" preload="metadata"></audio></div></aside><main class="panel content"><section class="section active" id="home"><div class="heading"><h2 id="headline">Welcome to my miniroom ♡</h2><span class="muted">HOME</span></div><div class="home-body"><div class="home-feature"><div id="featureImageWrap" class="feature-placeholder feature-cover">♡</div><div class="feature-info"><div class="feature-line" id="customPageLine">✿ MY PAGE</div><div id="featureName" class="feature-name"></div><div id="featureMemo" class="feature-memo"></div><div id="featureSite" class="feature-link"></div></div></div><div class="home-album-section"><div class="home-gallery-title">✧ PHOTO ALBUM</div><div class="home-gallery" id="homePhotoList" aria-label="최근 사진"></div></div></div></section><section class="section" id="diary"><div class="heading"><h2>📖 다이어리</h2><span class="muted">나의 소소한 기록</span></div><div id="diaryForm" class="form"><input class="field" id="diaryTitle" maxlength="70" placeholder="오늘의 제목"><textarea id="diaryText" maxlength="3000" placeholder="오늘은 어떤 하루였어?"></textarea><label class="photo-date-label" for="diaryDate">📅 일기 날짜</label><input class="field" id="diaryDate" type="date"><label class="photo-date-label" for="diaryImage">🖼️ 일기 사진 (선택)</label><input class="field" id="diaryImage" type="file" accept="image/*"><div id="diaryPreview" class="hint">사진을 선택하면 미리보기가 나타나 ♡</div><div class="row"><button class="btn" id="diaryAdd">일기 남기기</button><button class="btn secondary" id="diaryCancel" type="button" hidden>수정 취소</button></div></div><p class="hint">✎ 작성한 일기의 제목이나 내용을 누르면 직접 수정할 수 있어 ♡</p><div id="diaryList"></div></section><section class="section" id="photos"><div class="heading"><h2>📸 사진첩</h2><span class="muted">작은 순간들</span></div><div class="form" id="photoForm"><input id="photoFile" type="file" accept="image/*" class="field"><input id="photoCaption" class="field" maxlength="100" placeholder="사진 한 줄 설명"><label class="photo-date-label" for="photoDate">사진 날짜 (연도 · 월 · 일)</label><input id="photoDate" class="field" type="date" aria-label="사진 촬영 날짜"><div class="row"><button class="btn" id="photoAdd">사진 추가하기</button><button class="btn secondary" id="photoCancel" type="button" hidden>수정 취소</button></div><div class="hint">사진은 먼저 이 브라우저에 저장돼. 온라인 동기화가 연결되면 다른 사람에게도 표시돼.</div></div><p class="hint">✎ 사진 설명이나 날짜를 누르면 수정할 수 있어 ♡</p><div class="gallery" id="photoList"></div></section><section class="section" id="guestbook"><div class="heading"><h2>💌 방명록</h2><span class="muted" id="guestStatus">소중한 발자국</span></div><div class="form"><input class="field" id="guestName" maxlength="24" placeholder="닉네임"><textarea id="guestText" maxlength="500" placeholder="방명록에 따뜻한 한마디 남겨 줘 ♡"></textarea><button class="btn" id="guestAdd">방명록 남기기</button><div class="hint" id="guestHint">체험 모드: 방명록은 이 브라우저에서만 보여. 온라인 공유는 README를 참고해 줘.</div></div><div id="guestList"></div></section><section class="section" id="messages"><div class="heading"><h2>✉️ 쪽지함</h2><span class="muted">브라우저 체험 모드</span></div><div class="form"><input class="field" id="messageTo" maxlength="30" placeholder="받는 사람 닉네임"><textarea id="messageBody" maxlength="1000" placeholder="전하고 싶은 쪽지를 적어 줘 ♡"></textarea><button class="btn" id="sendMessage">쪽지 보내기 (체험)</button><div class="hint">현재 쪽지는 이 브라우저에만 저장돼. 실제 친구에게 전송되지 않아.</div></div><div class="row"><button class="btn secondary" id="showInbox">받은 쪽지</button><button class="btn secondary" id="showSent">보낸 쪽지</button></div><div id="messageList"></div></section><section class="section" id="friends"><div class="heading"><h2>♡ 일촌 친구</h2><span class="muted">간편 주인장 로그인 · 온라인 친구</span></div><div class="friends-card" id="localOwnerCard"><h3>🔐 주인장 간편 로그인</h3><p class="friend-note" id="localOwnerStatus">이 브라우저에서 사용할 주인장 비밀번호를 처음 한 번 정해 줘 ♡</p><div class="form"><input class="field" id="localOwnerPassword" type="password" autocomplete="new-password" placeholder="주인장 비밀번호 입력 (8자 이상)"><button class="btn" id="localOwnerLogin" type="button">주인장 모드 열기 ♡</button><button class="btn secondary" id="localOwnerLogout" type="button" hidden>주인장 모드 잠그기</button></div><p class="hint">개인용 체험 로그인: 이 브라우저에만 적용돼. 실제 Supabase 계정이나 온라인 데이터 권한은 바뀌지 않아. 처음 사용하는 다른 브라우저에서는 별도로 설정해야 해.</p></div><div class="friends-card"><h3>☁️ 미니홈피 온라인 자동 저장</h3><p id="syncStatus" class="friend-note">온라인 저장 연결을 확인하는 중이야...</p><div class="row"><button class="btn" type="button" id="syncMigrate">☁️ 내 기존 사진·게시글 온라인으로 옮기기</button><button class="btn secondary" type="button" id="syncReload">온라인 내용 다시 불러오기</button></div><p class="hint">처음 한 번만 기존 자료 옮기기를 눌러 줘. 이후 수정 사항은 자동 저장돼. 온라인 저장용 비밀번호는 Netlify 환경 변수에 기존 간편 비밀번호와 동일하게 설정해야 해.</p></div><div class="friends-card"><h3>온라인 일촌 계정 연결 (선택)</h3><p class="friend-note" id="friendStatus">설정이 필요해. README를 확인해 줘.</p><div class="form" id="friendAuth"><input class="field" type="email" id="friendEmail" placeholder="로그인할 이메일 주소" autocomplete="email"><button class="btn" id="friendLogin">이메일 로그인 링크 받기</button></div><div class="row"><button class="btn secondary" id="friendLogout" hidden>로그아웃</button></div></div><div class="friends-card" id="friendAccount" hidden><h3>내 일촌 정보</h3><label>친구들에게 보일 닉네임<input class="field" id="friendNickname" maxlength="32" placeholder="닉네임"></label><label>내 미니홈피 주소<input class="field" id="friendHomepage" type="url" placeholder="https://..."></label><div class="row"><button class="btn" id="friendSaveProfile">프로필 저장</button></div><p class="friend-note">내 친구 코드: <strong id="myFriendCode"></strong> <button class="btn secondary tiny" id="copyFriendCode">복사</button></p><p class="friend-note">친구 코드는 로그인 사용자에게만 공유해 줘. 사이트 주소와 친구 코드는 서로 달라.</p></div><div class="friends-card"><h3>친구 신청하기</h3><div class="row"><input class="field" id="friendTarget" placeholder="친구의 UUID 코드 붙여넣기"><button class="btn" id="friendRequest">신청</button></div><p class="friend-note">상대도 같은 Supabase 프로젝트의 친구 기능을 사용해야 신청을 받을 수 있어.</p></div><div class="friends-card"><h3>받은 신청</h3><div id="friendIncoming" class="friend-note">로그인 후 표시돼.</div></div><div class="friends-card"><h3>보낸 신청</h3><div id="friendOutgoing" class="friend-note">로그인 후 표시돼.</div></div><div class="friends-card"><h3>내 일촌 목록</h3><div id="friendAccepted" class="friend-note">로그인 후 표시돼.</div><button class="btn secondary" id="friendRefresh">새로고침</button></div><div class="friends-card"><h3>연결하고 싶은 미니홈피</h3><p>수빈의 미니홈피</p><a href="https://our-little-memory-room.shinycourt2.chatgpt.site/" target="_blank" rel="noopener noreferrer">수빈 미니홈피 방문하기 ↗</a><p class="friend-note">현재는 바로가기야. 상대 사이트가 동일한 친구 시스템을 연동하기 전에는 신청을 전달할 수 없어.</p></div></section><section class="section" id="settings"><div class="heading"><h2>🎨 미니홈피 꾸미기</h2><span class="muted">내 취향대로</span></div><div class="form"><div class="setting-grid"><label>미니홈피 이름<input class="field" id="sOwner" maxlength="40"></label><label>내 이름 (프로필에 표시)<input class="field" id="sDisplayName" maxlength="30" placeholder="예: 예담"></label><label>메인 제목<input class="field" id="sHeadline" maxlength="70"></label><label>오늘의 기분<input class="field" id="sMood" maxlength="60"></label><label>메인에 표시할 노래 제목<input class="field" id="sBgm" maxlength="100"></label><label>음악 파일 업로드 (MP3, M4A, WAV 등)<input class="field" id="sMusicFile" type="file" accept="audio/*"></label><label>LP 중앙 앨범 사진<input class="field" id="sLpCover" type="file" accept="image/*"></label><div class="hint">음악은 이 브라우저에 저장돼. 친구에게도 들리게 하려면 음악 파일을 사이트에 함께 배포해야 해. 사용 권한이 있는 음원만 등록해 줘.</div><label>내 사이트 링크 (선택, https://)<input class="field" id="sSiteUrl" type="url" placeholder="https://..."></label><label>메인 사진만 따로 업로드<input class="field" type="file" accept="image/*" id="sFeatureFile"></label><label>메인 사진 설명<input class="field" id="sFeatureCaption" maxlength="100" placeholder="메인 사진 한 줄 설명"></label><label>메인 표시 이름<input class="field" id="sFeatureName" maxlength="40" placeholder="메인에 표시할 이름"></label><label>메인 메모<textarea id="sFeatureMemo" maxlength="250" placeholder="메인에 표시할 짧은 메모"></textarea></label><label>포인트 색상<input type="color" id="sAccent" value="#ed8cab"></label><label>배경 색상<input type="color" id="sWall" value="#f6b9cf"></label></div>
+<div class="custom-group">
+<h3>🔗 작은 링크 버튼 꾸미기</h3>
+<p class="hint">주소는 버튼에 표시되지 않아. 링크마다 이름·배경색·글자색을 정할 수 있어.</p>
+<div id="customLinksEditor"></div>
+<button type="button" class="btn secondary" id="customAddLink">+ 링크 버튼 추가</button>
+</div>
+<div class="custom-group">
+<h3>✿ 메인 글자 꾸미기</h3>
+<div class="setting-grid">
+<label>왼쪽 상단 미니홈피 제목<input class="field" id="cBrandText" maxlength="70"></label>
+<label>제목 글자색<input id="cBrandColor" type="color"></label>
+<label>제목 굵기<select id="cBrandWeight"><option value="400">보통</option><option value="500">중간</option><option value="600">약간 굵게</option><option value="700">굵게</option><option value="900">아주 굵게</option></select></label>
+<label>제목 크기(px)<input class="field" id="cBrandSize" type="number" min="10" max="90"></label><label>왼쪽 프로필 이름 크기(px)<input class="field" id="cOwnerSize" type="number" min="10" max="70"></label><label>왼쪽 프로필 이름 글자색<input id="cOwnerColor" type="color"></label><label>왼쪽 프로필 이름 굵기<select id="cOwnerWeight"><option value="400">보통</option><option value="500">중간</option><option value="600">약간 굵게</option><option value="700">굵게</option><option value="900">아주 굵게</option></select></label>
+<label>MY PAGE 글자<input class="field" id="cPageText" maxlength="80"></label>
+<label>MY PAGE 글자색<input id="cPageColor" type="color"></label>
+<label>MY PAGE 글자 크기(px)<input class="field" id="cPageSize" type="number" min="9" max="45"></label>
+<label>MY PAGE 가로 위치(px)<input class="field" id="cPageX" type="number" min="-150" max="150"></label>
+<label>MY PAGE 세로 위치(px)<input class="field" id="cPageY" type="number" min="-150" max="150"></label>
+<label>183 / 메인 이름 글자<input class="field" id="cFeatureText" maxlength="80" placeholder="비우면 기존 메인 표시 이름 사용"></label>
+<label>메인 이름 글자색<input id="cFeatureColor" type="color"></label>
+<label>메인 이름 글자 크기(px)<input class="field" id="cFeatureSize" type="number" min="10" max="60"></label>
+<label>메인 이름 굵기<select id="cFeatureWeight"><option value="400">보통</option><option value="500">중간</option><option value="600">약간 굵게</option><option value="700">굵게</option><option value="900">아주 굵게</option></select></label>
+<label>메인 이름 가로 위치(px)<input class="field" id="cFeatureX" type="number" min="-150" max="150"></label>
+<label>메인 이름 세로 위치(px)<input class="field" id="cFeatureY" type="number" min="-150" max="150"></label>
+</div></div>
+<div class="custom-group">
+<h3>🖼️ 대표 이미지 크기</h3>
+<div class="setting-grid">
+<label>대표 이미지 가로(px)<input class="field" id="cImageW" type="number" min="80" max="650"></label>
+<label>대표 이미지 세로(px)<input class="field" id="cImageH" type="number" min="80" max="650"></label>
+</div><p class="hint">사진이 잘리지 않도록 영역을 조절할 수 있어. 너무 큰 값은 기존 카드 폭에 맞춰 표시돼.</p></div>
+<label>자기소개<textarea id="sIntro" maxlength="300"></textarea></label><label>프로필 이미지<input class="field" id="sAvatar" type="file" accept="image/*"></label><div class="row"><button class="btn" id="saveSettings">꾸미기 저장</button><button class="btn secondary" id="resetSettings">기본 테마로</button></div><p class="hint">내 이름은 왼쪽 프로필에 표시되고, 미니홈피 이름은 별도로 설정할 수 있어. 메인 화면 이름도 별도로 지정할 수 있어.</p><p class="hint">온라인 동기화가 연결되면 꾸미기 변경 사항도 방문자에게 공유돼.</p></div></section></main><nav class="menu" aria-label="미니홈피 메뉴"><button data-page="home" class="active">🏠 홈</button><button data-page="diary">📖 다이어리</button><button data-page="photos">📸 사진첩</button><button data-page="guestbook">💌 방명록</button><button data-page="messages">✉️ 쪽지함</button><button data-page="friends">♡ 일촌</button><button data-page="settings">🎨 꾸미기</button></nav></div><div class="footer">made with ♡ · 나만의 작은 인터넷 공간</div></div><div class="photo-modal" id="photoModal" hidden><div class="photo-dialog" role="dialog" aria-modal="true" aria-label="사진 크게 보기"><button type="button" class="photo-close" id="photoClose" aria-label="닫기">×</button><img id="photoModalImage" alt="확대된 사진"><p id="photoModalCaption"></p><div class="comment-area" id="commentArea"><h3>💬 댓글 <span id="commentCount">0</span></h3><div id="commentList"></div><div class="form"><input class="field" id="commentName" maxlength="24" placeholder="닉네임"><textarea id="commentBody" maxlength="400" placeholder="사진에 댓글 남기기 ♡"></textarea><label class="comment-private"><input type="checkbox" id="commentSecret"> 🔒 비밀 댓글 (작성자와 주인장만 보기)</label><button class="btn" id="commentAdd">댓글 등록</button><div class="hint" id="commentOnlineHint">온라인 댓글을 사용하려면 Supabase 연결과 로그인이 필요해.</div></div></div></div></div>
+<script src="config.js"></script><script>
+'use strict';const $=id=>document.getElementById(id);const KEY='minihome_v1_';const defaults={owner:'마이 미니홈피183',displayName:'',headline:'Welcome to my miniroom ♡',mood:'몽글몽글',bgm:'오늘의 플레이리스트',character:'🐰',decor:'🌷',intro:'어서 와! 내 작은 공간에 놀러 온 걸 환영해 ♡',accent:'#ed8cab',wall:'#f6b9cf',avatar:'',songUrl:'',siteUrl:'',mainPhotoId:'',featurePhoto:'',featureCaption:'',featureName:'',featureMemo:''};const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(KEY+key))??fallback}catch{return fallback}};const save=(key,value)=>{try{localStorage.setItem(KEY+key,JSON.stringify(value));if(['settings','diaries','photos','presence'].includes(key))window.minihomeSync?.enqueue(key,value);return true}catch{alert('브라우저 저장 공간이 부족하거나 저장이 차단됐어.');return false}};let settings=read('settings',defaults),diaries=read('diaries',[]),photos=read('photos',[]),guests=read('guests',[]);let editingDiaryId=null,editingPhotoId=null;let comments=read('photoComments',{}),messages=read('messages',[]),presence=read('presence','online'),activePhoto=null,messageTab='inbox';const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};const date=()=>new Date().toLocaleString('ko-KR');function apply(){document.documentElement.style.setProperty('--accent',settings.accent);document.documentElement.style.setProperty('--wall',settings.wall);document.documentElement.style.setProperty('--light',settings.accent+'33');$('owner').textContent=settings.displayName||settings.owner;$('headline').textContent=settings.headline;$('mood').textContent='♪ 오늘의 기분 : '+settings.mood;renderFeature();applyCustomAppearance();$('intro').textContent=settings.intro;$('avatar').replaceChildren();if(settings.avatar){const img=el('img');img.src=settings.avatar;img.alt='프로필 사진';$('avatar').append(img)}else $('avatar').textContent=settings.character;for(const [id,k] of Object.entries({sOwner:'owner',sDisplayName:'displayName',sHeadline:'headline',sMood:'mood',sBgm:'bgm',sIntro:'intro',sAccent:'accent',sWall:'wall'}))$(id).value=settings[k]}
+function safeUrl(value){try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
+function renderFeature(){
+ $('featureName').textContent=settings.featureName||settings.displayName||settings.owner||defaults.owner; $('featureMemo').textContent=settings.featureMemo||'';
+
+ const site=$('featureSite');site.replaceChildren();
+ const links=Array.isArray(settings.customLinks)?settings.customLinks:[];
+ const allLinks=links.length?links:(settings.siteUrl?[{name:'instagram',url:settings.siteUrl,bg:'#ffe4ef',color:'#8e426b'}]:[]);
+ for(const link of allLinks){const href=safeUrl(link.url);if(!href)continue;const a=el('a','custom-link','🔗 '+(link.name||'바로가기')+' ↗');a.href=href;a.target='_blank';a.rel='noopener noreferrer';a.style.backgroundColor=link.bg||'#ffe4ef';a.style.color=link.color||'#8e426b';site.append(a)}
+ const wrap=$('featureImageWrap');wrap.replaceChildren();const selected=settings.featurePhoto?{src:settings.featurePhoto,caption:settings.featureCaption||''}:null;
+ if(selected){const img=el('img','feature-cover');img.src=selected.src;img.alt=selected.caption||'메인 사진';img.tabIndex=0;img.onclick=()=>openPhoto(selected);img.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPhoto(selected)}};wrap.append(img)}else{wrap.textContent='♡';wrap.classList.add('feature-placeholder')}
+ $('sFeatureName').value=settings.featureName||'';$('sFeatureMemo').value=settings.featureMemo||'';$('sFeatureCaption').value=settings.featureCaption||'';
+ $('sSiteUrl').value=settings.siteUrl||'';renderLpMeta();
+}
+function renderEntries(container,items,allowDelete=false,kind=''){const root=$(container);root.replaceChildren();if(!items.length){root.append(el('p','note','아직 기록이 없어. 첫 번째 이야기를 남겨 줘!'));return}for(const item of [...items].reverse()){const card=el('article','entry'),head=el('div','entry-head'),name=el('strong','',item.name||item.title),time=el('span','',item.date);head.append(name,time);card.append(head);if(kind==='diaries'&&item.diaryDate){card.append(el('div','diary-date','📅 '+formatPhotoDate(item.diaryDate)))}card.append(el('p','',item.text));if(kind==='diaries'&&item.image){const pic=el('img','diary-image');pic.src=item.image;pic.alt='일기 사진';pic.loading='lazy';pic.onclick=()=>openPhoto({src:item.image,caption:item.title||'일기 사진',photoDate:item.diaryDate||'',id:null});card.append(pic)}if(allowDelete&&kind==='diaries'){card.title='제목이나 내용을 누르면 수정할 수 있어 ♡';name.style.cursor='text';name.onclick=()=>startDiaryEdit(item);card.querySelector('p').style.cursor='text';card.querySelector('p').onclick=()=>startDiaryEdit(item)}if(allowDelete){const b=el('button','btn secondary tiny','삭제');b.style.marginTop='10px';b.onclick=()=>{if(confirm('이 기록을 삭제할까?')){if(kind==='diaries'){diaries=diaries.filter(x=>x.id!==item.id);save('diaries',diaries);renderEntries('diaryList',diaries,true,'diaries')}else{guests=guests.filter(x=>x.id!==item.id);save('guests',guests);renderEntries('guestList',guests,true,'guests')}}};card.append(b)}root.append(card)}}function openPhoto(item){activePhoto=item.id||null;renderComments();const modal=$('photoModal');$('photoModalImage').src=item.src;$('photoModalImage').alt=item.caption||'확대된 사진';$('photoModalCaption').textContent=(item.photoDate?formatPhotoDate(item.photoDate)+'\n':'')+(item.caption||'설명이 없는 사진이에요 ♡');modal.hidden=false;document.body.style.overflow='hidden';$('photoClose').focus()}
+function closePhoto(){const modal=$('photoModal');modal.hidden=true;document.body.style.overflow='';$('photoModalImage').removeAttribute('src')}
+$('photoClose').onclick=closePhoto;$('photoModal').addEventListener('click',e=>{if(e.target===$('photoModal'))closePhoto()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('photoModal').hidden)closePhoto()});
+function renderHomePhotos(){
+ renderFeature();
+ const root=$('homePhotoList');root.replaceChildren();
+ if(!photos.length){const empty=el('div','home-empty');empty.append(el('div','home-empty-icon','♡'),el('p','','아직 사진이 없어. 사진첩에서 첫 사진을 추가해 줘!'));const go=el('button','btn','사진첩으로 이동');go.onclick=()=>document.querySelector('[data-page="photos"]').click();empty.append(go);root.append(empty);return;}
+ for(const item of [...photos].reverse().slice(0,12)){
+  const card=el('div','home-photo'),img=el('img');img.src=item.src;img.alt=item.caption||'사진첩 사진';img.loading='lazy';card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label','사진 크게 보기: '+(item.caption||'설명 없음'));card.onclick=()=>openPhoto(item);card.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPhoto(item)}};card.append(img);if(item.caption)card.append(el('p','',item.caption));if(item.photoDate)card.append(el('div','photo-date',formatPhotoDate(item.photoDate)));root.append(card);
+ }
+}
+function formatPhotoDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return '';const [y,m,d]=value.split('-');return `${y}년 ${Number(m)}월 ${Number(d)}일`}function renderPhotos(){renderHomePhotos();const root=$('photoList');root.replaceChildren();if(!photos.length){root.append(el('p','note','아직 사진이 없어. 첫 사진을 추가해 봐!'));return}for(const item of [...photos].reverse()){const card=el('div','photo'),img=el('img');img.src=item.src;img.alt=item.caption||'사진';img.tabIndex=0;img.onclick=()=>openPhoto(item);img.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPhoto(item)}};card.append(img,el('p','',item.caption));if(item.photoDate)card.append(el('div','photo-date',formatPhotoDate(item.photoDate)));card.title='사진 설명이나 날짜를 누르면 수정할 수 있어 ♡';card.querySelector('p').style.cursor='text';card.querySelector('p').onclick=()=>startPhotoEdit(item);if(item.photoDate){const dateNode=card.querySelector('.photo-date');if(dateNode){dateNode.style.cursor='text';dateNode.onclick=()=>startPhotoEdit(item)}}const b=el('button','btn secondary tiny','삭제');b.onclick=()=>{if(confirm('이 사진을 삭제할까?')){photos=photos.filter(x=>x.id!==item.id);save('photos',photos);renderPhotos()}};card.append(b);root.append(card)}}document.querySelectorAll('[data-page]').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===btn.dataset.page));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b===btn))});$('diaryDate').value=new Date().toLocaleDateString('en-CA');
+$('diaryImage').onchange=()=>{const file=$('diaryImage').files[0],preview=$('diaryPreview');preview.replaceChildren();if(!file){preview.textContent='사진을 선택하면 미리보기가 나타나 ♡';return}if(!file.type.startsWith('image/')){alert('이미지 파일만 선택해 줘.');$('diaryImage').value='';return}const url=URL.createObjectURL(file),img=el('img','diary-preview-img');img.src=url;img.alt='선택한 일기 사진 미리보기';img.onload=()=>URL.revokeObjectURL(url);preview.append(img)};
+$('diaryAdd').onclick=async()=>{const title=$('diaryTitle').value.trim(),text=$('diaryText').value.trim(),diaryDate=$('diaryDate').value,file=$('diaryImage').files[0];if(!title||!text)return alert('제목과 내용을 모두 입력해 줘!');if(file&&(!file.type.startsWith('image/')||file.size>2*1024*1024))return alert('사진은 2MB 이하의 이미지로 선택해 줘.');const btn=$('diaryAdd');btn.disabled=true;try{let image='';if(file){image=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=reject;reader.readAsDataURL(file)})}const old=diaries.find(x=>x.id===editingDiaryId);const next=old?diaries.map(x=>x.id===editingDiaryId?{...x,title,text,diaryDate,image:image||x.image||''}:x):[...diaries,{id:crypto.randomUUID(),title,text,date:date(),diaryDate,image}];if(save('diaries',next)){diaries=next;$('diaryTitle').value='';$('diaryText').value='';$('diaryImage').value='';$('diaryDate').value=new Date().toLocaleDateString('en-CA');$('diaryPreview').textContent='사진을 선택하면 미리보기가 나타나 ♡';resetDiaryEdit();renderEntries('diaryList',diaries,true,'diaries')}}catch(e){alert('사진을 읽지 못했어. 다른 사진을 선택해 줘.');console.error(e)}finally{btn.disabled=false}};
+$('photoAdd').onclick=()=>{const file=$('photoFile').files[0];if(!file&&!editingPhotoId)return alert('사진을 선택해 줘!');if(file&&!file.type.startsWith('image/'))return alert('이미지 파일만 올릴 수 있어.');if(file&&file.size>3*1024*1024)return alert('3MB 이하의 이미지를 선택해 줘.');const reader=new FileReader();reader.onload=()=>{const next=editingPhotoId?photos.map(x=>x.id===editingPhotoId?{...x,src:file?reader.result:x.src,caption:$('photoCaption').value.trim(),photoDate:$('photoDate').value||''}:x):[...photos,{id:crypto.randomUUID(),src:file?reader.result:x.src,caption:$('photoCaption').value.trim(),photoDate:$('photoDate').value||''}];if(save('photos',next)){photos=next;$('photoFile').value='';$('photoCaption').value='';$('photoDate').value='';resetPhotoEdit();renderPhotos()}};if(file){reader.readAsDataURL(file)}else{const old=photos.find(x=>x.id===editingPhotoId);if(!old)return alert('수정할 사진을 찾지 못했어.');reader.onload({});}};$('saveSettings').onclick=()=>{const next={...settings};for(const [id,k] of Object.entries({sOwner:'owner',sDisplayName:'displayName',sHeadline:'headline',sMood:'mood',sBgm:'bgm',sIntro:'intro',sAccent:'accent',sWall:'wall'}))next[k]=$(id).value.trim()||defaults[k];next.songUrl='';next.siteUrl=$('sSiteUrl').value.trim();next.featureName=$('sFeatureName').value.trim();next.featureMemo=$('sFeatureMemo').value.trim();next.featureCaption=$('sFeatureCaption').value.trim(); if((next.siteUrl&&!safeUrl(next.siteUrl)))return alert('링크는 https:// 또는 http://로 시작해야 해.');try{Object.assign(next,collectCustomSettings())}catch(e){return alert(e.message)}settings=next;if(save('settings',settings)){apply();alert('꾸미기 저장 완료! ♡')}};$('resetSettings').onclick=()=>{if(confirm('꾸미기 설정을 기본값으로 바꿀까?')){settings={...defaults};save('settings',settings);apply()}};$('sFeatureFile').onchange=()=>{const file=$('sFeatureFile').files[0];if(!file)return;if(!file.type.startsWith('image/')||file.size>2*1024*1024)return alert('2MB 이하의 이미지 파일을 선택해 줘.');const reader=new FileReader();reader.onload=()=>{const next={...settings,featurePhoto:reader.result,featureCaption:$('sFeatureCaption').value.trim(),featureName:$('sFeatureName').value.trim(),featureMemo:$('sFeatureMemo').value.trim()};if(save('settings',next)){settings=next;apply()}};reader.readAsDataURL(file)};
+$('sAvatar').onchange=()=>{const file=$('sAvatar').files[0];if(!file)return;if(!file.type.startsWith('image/')||file.size>2*1024*1024)return alert('2MB 이하 이미지 파일만 가능해.');const reader=new FileReader();reader.onload=()=>{settings.avatar=reader.result;if(save('settings',settings))apply()};reader.readAsDataURL(file)};
+
+
+// 사용자가 직접 꾸밀 수 있는 링크 / 타이포그래피 / 이미지 크기
+const customDefaults={
+ brandText:'✿ 마이 미니홈피183',brandColor:'#6a5266',brandWeight:'600',brandSize:19,ownerSize:13,ownerColor:'#ed8cab',ownerWeight:'600',
+ pageText:'✿ MY PAGE',pageColor:'#8d8290',pageSize:12,pageX:0,pageY:0,
+ featureText:'',featureColor:'#514b55',featureSize:19,featureWeight:'700',featureX:0,featureY:0,
+ imageW:325,imageH:325,customLinks:[]
+};
+const customIds={
+ brandText:'cBrandText',brandColor:'cBrandColor',brandWeight:'cBrandWeight',brandSize:'cBrandSize',ownerSize:'cOwnerSize',ownerColor:'cOwnerColor',ownerWeight:'cOwnerWeight',
+ pageText:'cPageText',pageColor:'cPageColor',pageSize:'cPageSize',pageX:'cPageX',pageY:'cPageY',
+ featureText:'cFeatureText',featureColor:'cFeatureColor',featureSize:'cFeatureSize',
+ featureWeight:'cFeatureWeight',featureX:'cFeatureX',featureY:'cFeatureY',
+ imageW:'cImageW',imageH:'cImageH'
+};
+function validNumber(value,fallback,min,max){const n=Number(value);return Number.isFinite(n)?Math.min(max,Math.max(min,n)):fallback}
+function createLinkRow(item={name:'',url:'',bg:'#ffe4ef',color:'#8e426b'}){
+ const row=el('div','custom-link-row');
+ for(const [key,type,placeholder] of [['name','text','버튼 이름'],['url','url','https://...'],['bg','color',''],['color','color','']]){
+  const inp=el('input','field');inp.type=type;inp.dataset.linkField=key;inp.placeholder=placeholder;inp.value=item[key]||((key==='bg')?'#ffe4ef':(key==='color'?'#8e426b':''));inp.setAttribute('aria-label',key==='name'?'버튼 이름':key==='url'?'링크 주소':key==='bg'?'버튼 배경색':'버튼 글자색');row.append(inp)
+ }
+ const remove=el('button','btn secondary tiny','삭제');remove.type='button';remove.onclick=()=>row.remove();row.append(remove);$('customLinksEditor').append(row);
+}
+$('customAddLink').onclick=()=>createLinkRow();
+function readLinkRows(){
+ return [...$('customLinksEditor').querySelectorAll('.custom-link-row')].map(row=>{
+  const item={};row.querySelectorAll('[data-link-field]').forEach(inp=>item[inp.dataset.linkField]=inp.value.trim());return item;
+ }).filter(x=>x.name||x.url);
+}
+function fillCustomSettings(){
+ const c={...customDefaults,...settings};
+ for(const [key,id] of Object.entries(customIds))$(id).value=c[key]??customDefaults[key];
+ $('customLinksEditor').replaceChildren();
+ const links=Array.isArray(c.customLinks)?c.customLinks:[];
+ if(links.length)links.forEach(createLinkRow);
+ else if(settings.siteUrl)createLinkRow({name:'instagram',url:settings.siteUrl,bg:'#ffe4ef',color:'#8e426b'});
+}
+function collectCustomSettings(){
+ const c={};for(const [key,id] of Object.entries(customIds))c[key]=$(id).value;
+ for(const key of ['brandSize','ownerSize','pageSize','pageX','pageY','featureSize','featureX','featureY','imageW','imageH'])c[key]=Number(c[key]);
+ c.customLinks=readLinkRows();
+ for(const link of c.customLinks)if(!link.name||!safeUrl(link.url))throw new Error('링크 버튼 이름과 올바른 https:// 주소를 모두 입력해 줘.');
+ return c;
+}
+function applyCustomAppearance(){
+ const c={...customDefaults,...settings};
+ const brand=$('customBrandText'),owner=$('owner'),page=$('customPageLine'),name=$('featureName'),wrap=$('featureImageWrap');
+ brand.textContent=c.brandText||customDefaults.brandText;
+ brand.style.color=c.brandColor;brand.style.fontWeight=c.brandWeight;
+ brand.style.fontSize=validNumber(c.brandSize,19,10,90)+'px';
+ owner.style.fontSize=validNumber(c.ownerSize,13,10,70)+'px';owner.style.color=c.ownerColor;owner.style.fontWeight=c.ownerWeight;page.textContent=c.pageText||customDefaults.pageText;page.style.color=c.pageColor;
+ page.style.fontSize=validNumber(c.pageSize,12,9,45)+'px';
+ page.style.transform=`translate(${validNumber(c.pageX,0,-150,150)}px,${validNumber(c.pageY,0,-150,150)}px)`;
+ if(c.featureText)name.textContent=c.featureText;
+ name.style.color=c.featureColor;name.style.fontSize=validNumber(c.featureSize,19,10,60)+'px';
+ name.style.fontWeight=c.featureWeight;
+ name.style.transform=`translate(${validNumber(c.featureX,0,-150,150)}px,${validNumber(c.featureY,0,-150,150)}px)`;
+ wrap.style.width=`min(100%, ${validNumber(c.imageW,325,80,650)}px)`;
+ wrap.style.height=validNumber(c.imageH,325,80,650)+'px';
+ wrap.style.maxHeight='none';
+ wrap.querySelectorAll('img').forEach(img=>{img.style.maxHeight='none'});
+ fillCustomSettings();
+}
+// 오디오 파일은 localStorage 용량 제한을 피하기 위해 IndexedDB에 저장함.
+const musicDB=new Promise((resolve,reject)=>{const req=indexedDB.open('minihome_music_v1',1);req.onupgradeneeded=()=>req.result.createObjectStore('assets');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});
+async function musicAsset(key,value){const db=await musicDB;return new Promise((resolve,reject)=>{const tx=db.transaction('assets',value===undefined?'readonly':'readwrite');const store=tx.objectStore('assets');const req=value===undefined?store.get(key):store.put(value,key);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
+let lpObjectUrl=null;
+function renderLpMeta(){if(!$('lpTrack'))return;$('lpTrack').textContent=settings.bgm||'오늘의 플레이리스트';const cover=$('lpLabel');cover.style.backgroundImage=settings.lpCover?'url('+JSON.stringify(settings.lpCover)+')':'';cover.textContent=settings.lpCover?'':'♫'}
+function formatLpTime(t){if(!Number.isFinite(t))return '0:00';return Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0')}
+async function loadLpMusic(){const audio=$('lpAudio');try{const blob=await musicAsset('track');if(lpObjectUrl)URL.revokeObjectURL(lpObjectUrl);lpObjectUrl=blob?URL.createObjectURL(blob):null;audio.pause();audio.removeAttribute('src');if(lpObjectUrl)audio.src=lpObjectUrl;audio.load();$('lpHelp').textContent=blob?'음악을 재생할 준비가 됐어 ♡':'꾸미기에서 음악 파일을 등록해 줘 ♡';updateLp()}catch(e){$('lpHelp').textContent='이 브라우저에서는 음악 저장을 사용할 수 없어.';console.error(e)}}
+function updateLp(){const a=$('lpAudio');$('lpDisc').classList.toggle('playing',!a.paused&&!a.ended);$('lpPlay').textContent=a.paused?'▶':'Ⅱ';$('lpPlay').setAttribute('aria-label',a.paused?'노래 재생':'노래 일시정지');$('lpTime').textContent=formatLpTime(a.currentTime)+' / '+formatLpTime(a.duration)}
+$('lpPlay').onclick=async()=>{const a=$('lpAudio');if(!a.getAttribute('src'))return alert('꾸미기 메뉴에서 음악 파일을 먼저 올려 줘!');try{if(a.paused)await a.play();else a.pause()}catch(e){alert('이 음악 파일을 재생할 수 없어. 다른 형식으로 올려 줘.')}};
+for(const event of ['play','pause','ended','timeupdate','loadedmetadata'])$('lpAudio').addEventListener(event,updateLp);
+function resetDiaryEdit(){editingDiaryId=null;$('diaryAdd').textContent='일기 남기기';$('diaryCancel').hidden=true}
+function startDiaryEdit(item){if(document.body.dataset.role!=='owner')return alert('주인장 로그인 후 수정할 수 있어.');editingDiaryId=item.id;$('diaryTitle').value=item.title||'';$('diaryText').value=item.text||'';$('diaryDate').value=item.diaryDate||new Date().toLocaleDateString('en-CA');$('diaryImage').value='';$('diaryPreview').replaceChildren();if(item.image){const img=el('img','diary-preview-img');img.src=item.image;$('diaryPreview').append(img,el('p','hint','새 사진을 선택하지 않으면 기존 사진이 유지돼 ♡'))}else $('diaryPreview').textContent='사진을 선택하면 미리보기가 나타나 ♡';$('diaryAdd').textContent='수정 저장 ♡';$('diaryCancel').hidden=false;$('diaryForm').scrollIntoView({behavior:'smooth',block:'start'})}
+$('diaryCancel').onclick=()=>{resetDiaryEdit();$('diaryTitle').value='';$('diaryText').value='';$('diaryImage').value='';$('diaryDate').value=new Date().toLocaleDateString('en-CA');$('diaryPreview').textContent='사진을 선택하면 미리보기가 나타나 ♡'};
+function resetPhotoEdit(){editingPhotoId=null;$('photoAdd').textContent='사진 추가하기';$('photoCancel').hidden=true;$('photoFile').required=false}
+function startPhotoEdit(item){if(document.body.dataset.role!=='owner')return alert('주인장 로그인 후 수정할 수 있어.');editingPhotoId=item.id;$('photoCaption').value=item.caption||'';$('photoDate').value=item.photoDate||'';$('photoFile').value='';$('photoAdd').textContent='수정 저장 ♡';$('photoCancel').hidden=false;$('photoForm').scrollIntoView({behavior:'smooth',block:'start'})}
+$('photoCancel').onclick=()=>{resetPhotoEdit();$('photoCaption').value='';$('photoDate').value='';$('photoFile').value=''};
+
+$('sMusicFile').onchange=async()=>{const file=$('sMusicFile').files[0];if(!file)return;if(!file.type.startsWith('audio/'))return alert('음악 파일을 선택해 줘.');try{await musicAsset('track',file);await loadLpMusic();
+
+$('lpHelp').textContent='음악 저장 완료! 재생 버튼을 눌러 봐 ♡'}catch(e){alert('음악 저장에 실패했어. 브라우저 저장 공간을 확인해 줘.')}};
+$('sLpCover').onchange=()=>{const file=$('sLpCover').files[0];if(!file)return;if(!file.type.startsWith('image/')||file.size>2*1024*1024)return alert('2MB 이하 이미지 파일을 골라 줘.');const reader=new FileReader();reader.onload=()=>{const next={...settings,lpCover:reader.result};if(save('settings',next)){settings=next;renderLpMeta()}};reader.readAsDataURL(file)};
+loadLpMusic();
+
+// 온라인 방명록: config.js에 SUPABASE_URL과 SUPABASE_ANON_KEY를 설정하면 모든 방문자가 같은 방명록을 공유함.
+const online=typeof window.SUPABASE_URL==='string'&&window.SUPABASE_URL.startsWith('https://')&&typeof window.SUPABASE_ANON_KEY==='string'&&window.SUPABASE_ANON_KEY.length>20;const endpoint=online?window.SUPABASE_URL.replace(/\/$/,'')+'/rest/v1/guestbook':null;const headers=online?{'apikey':window.SUPABASE_ANON_KEY,'Authorization':'Bearer '+window.SUPABASE_ANON_KEY,'Content-Type':'application/json'}:{};async function loadGuests(){if(!online){renderEntries('guestList',guests,true,'guests');return}try{const res=await fetch(endpoint+'?select=id,name,message,created_at&order=created_at.asc&limit=100',{headers});if(!res.ok)throw Error(res.status);const data=await res.json();guests=data.map(x=>({id:x.id,name:x.name,text:x.message,date:new Date(x.created_at).toLocaleString('ko-KR')}));renderEntries('guestList',guests,false);$('guestStatus').textContent='온라인 공유 중 ♡';$('guestHint').textContent='온라인 방명록: 친구들도 같은 주소에서 글을 볼 수 있어.'}catch(e){$('guestStatus').textContent='연결 오류';$('guestHint').textContent='온라인 방명록 연결에 실패했어. 설정과 SQL을 확인해 줘.';console.error(e)}}$('guestAdd').onclick=async()=>{const name=$('guestName').value.trim(),text=$('guestText').value.trim();if(!name||!text)return alert('닉네임과 메시지를 입력해 줘!');const b=$('guestAdd');b.disabled=true;try{if(online){const res=await fetch(endpoint,{method:'POST',headers:{...headers,Prefer:'return=minimal'},body:JSON.stringify({name,message:text})});if(!res.ok)throw Error(await res.text());$('guestText').value='';await loadGuests()}else{guests.push({id:crypto.randomUUID(),name,text,date:date()});if(save('guests',guests)){$('guestText').value='';renderEntries('guestList',guests,true,'guests')}}}catch(e){alert('방명록 저장 실패. 데이터베이스 설정을 확인해 줘.');console.error(e)}finally{b.disabled=false}};
+
+function renderPresence(){const on=presence==='online';$('presenceDot').classList.toggle('offline',!on);$('presenceText').textContent=on?'온라인':'오프라인';$('presenceSelect').value=presence}
+$('presenceSelect').onchange=()=>{presence=$('presenceSelect').value;save('presence',presence);renderPresence()};
+function renderComments(){const root=$('commentList');root.replaceChildren();$('commentArea').hidden=!activePhoto;if(!activePhoto)return;root.append(el('p','hint','댓글을 불러오는 중...'));window.miniComments?.load(activePhoto)}
+$('commentAdd').onclick=()=>window.miniComments?.submit();
+function renderMessages(){const root=$('messageList');root.replaceChildren();const list=messages.filter(m=>m.folder===messageTab);if(!list.length){root.append(el('p','note',messageTab==='inbox'?'받은 쪽지가 없어 ♡':'보낸 쪽지가 없어 ♡'));return}for(const m of [...list].reverse()){const card=el('article','entry');const head=el('div','entry-head');head.append(el('strong','',messageTab==='inbox'?'보낸 사람: '+m.from:'받는 사람: '+m.to),el('span','',m.date));card.append(head,el('p','',m.text));root.append(card)}}
+$('showInbox').onclick=()=>{messageTab='inbox';renderMessages()};$('showSent').onclick=()=>{messageTab='sent';renderMessages()};
+$('sendMessage').onclick=()=>{const to=$('messageTo').value.trim(),body=$('messageBody').value.trim();if(!to||!body)return alert('받는 사람과 내용을 입력해 줘!');const next=[...messages,{id:crypto.randomUUID(),folder:'sent',from:settings.owner,to,text:body,date:date()}];if(save('messages',next)){messages=next;$('messageBody').value='';messageTab='sent';renderMessages();alert('체험용 보낸 쪽지함에 저장했어. 실제 상대에게는 전송되지 않아.')}};
+renderPresence();renderMessages();
+
+const d=new Date().toISOString().slice(0,10),visit=read('visit',{day:'',today:0,total:0});if(visit.day!==d){visit.day=d;visit.today=0}visit.today++;visit.total++;save('visit',visit);$('today').textContent=visit.today;$('total').textContent=visit.total;apply();renderEntries('diaryList',diaries,true,'diaries');renderPhotos();loadGuests();
+
+// Shared content: read for everyone; write only through password-protected Netlify Function.
+(()=>{
+ const api='/.netlify/functions/minihome';
+ const keys=['settings','diaries','photos','presence'];
+ let token=sessionStorage.getItem('minihome_cloud_token')||'';
+ let remoteExists=false, syncing=false, pending=false, timer=null, lastError='';
+ const status=(message)=>{const n=document.getElementById('syncStatus');if(n)n.textContent=message};
+ async function call(method,body){
+  const r=await fetch(api,{method,headers:{'Content-Type':'application/json',...(token?{'Authorization':'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})});
+  const data=await r.json().catch(()=>({}));
+  if(!r.ok)throw Error(data.error||('HTTP '+r.status));return data;
+ }
+ function snapshot(){return {settings,diaries,photos,presence}}
+ function localHasContent(){return !!(localStorage.getItem(KEY+'settings')||diaries.length||photos.length)}
+ function renderCloud(content){
+  if(!content||typeof content!=='object')return;
+  if(content.settings&&typeof content.settings==='object')settings=content.settings;
+  if(Array.isArray(content.diaries))diaries=content.diaries;
+  if(Array.isArray(content.photos))photos=content.photos;
+  if(typeof content.presence==='string')presence=content.presence;
+  // Persist remote snapshot locally without re-uploading it.
+  for(const k of keys){const value=({settings,diaries,photos,presence})[k];try{localStorage.setItem(KEY+k,JSON.stringify(value))}catch(e){console.warn('local cache full',e)}}
+  apply();renderEntries('diaryList',diaries,document.body.dataset.role==='owner','diaries');renderPhotos();renderPresence();
+ }
+ async function loadRemote(force=false){
+  try{
+   const data=await call('GET');remoteExists=!!data.exists;
+   if(data.exists){
+    // Don't destroy this browser's pre-existing photos before first migration.
+    if(force||!localHasContent()||localStorage.getItem('minihome_cloud_migrated')==='yes')renderCloud(data.content);
+    else status('☁️ 온라인 자료가 있어. 이 브라우저의 기존 사진을 먼저 옮길지 확인해 줘.');
+   }else status('☁️ 온라인 자료가 아직 없어. 주인장 로그인 후 기존 자료 옮기기를 눌러 줘.');
+   if(data.exists&&(!localHasContent()||force||localStorage.getItem('minihome_cloud_migrated')==='yes'))status('✓ 온라인 자료 불러오기 완료 ♡');
+  }catch(e){status('온라인 불러오기 실패: '+e.message)}
+ }
+ async function authenticate(password){
+  try{const data=await call('POST',{action:'login',password});token=data.token;sessionStorage.setItem('minihome_cloud_token',token);status('✓ 온라인 저장 인증 완료 ♡');
+   if(!localHasContent())await loadRemote(true);
+  }catch(e){token='';sessionStorage.removeItem('minihome_cloud_token');status('온라인 저장 로그인 실패: '+e.message+' (간편 로그인은 유지돼)')}
+ }
+ async function convertMedia(value){
+  if(typeof value!=='string'||!value.startsWith('data:'))return value;
+  const result=await call('POST',{action:'upload',data:value});return result.url;
+ }
+ async function uploadSnapshot(data){
+  data=structuredClone(data);
+  if(data.settings){for(const k of ['avatar','featurePhoto','lpCover'])if(data.settings[k])data.settings[k]=await convertMedia(data.settings[k]);}
+  for(const item of data.photos||[])if(item.src)item.src=await convertMedia(item.src);
+  for(const item of data.diaries||[])if(item.image)item.image=await convertMedia(item.image);
+  return data;
+ }
+ async function flush(){
+  if(syncing||!token||!remoteExists)return;
+  syncing=true;pending=false;status('☁️ 변경 사항 온라인 저장 중...');
+  try{const data=await uploadSnapshot(snapshot());await call('POST',{action:'save',content:data});
+   // Update only image references in memory, without triggering new saves.
+   for(const k of ['avatar','featurePhoto','lpCover'])if(data.settings?.[k])settings[k]=data.settings[k];
+   for(const item of photos){const next=data.photos?.find(p=>p.id===item.id);if(next)item.src=next.src;}
+   for(const item of diaries){const next=data.diaries?.find(p=>p.id===item.id);if(next)item.image=next.image;}
+   for(const k of keys)try{localStorage.setItem(KEY+k,JSON.stringify(({settings,diaries,photos,presence})[k]))}catch{}
+   lastError='';status('✓ 온라인 저장 완료 ♡');
+  }catch(e){lastError=e.message;status('⚠️ 온라인 저장 실패: '+e.message+' — 이 브라우저의 자료는 유지돼.');}
+  finally{syncing=false;if(pending){clearTimeout(timer);timer=setTimeout(flush,500)}}
+ }
+ function enqueue(){if(!token||!remoteExists){if(document.body.dataset.role==='owner')status('⚠️ 온라인 저장 미연결. 기존 자료 옮기기 버튼을 먼저 눌러 줘.');return}pending=true;clearTimeout(timer);timer=setTimeout(flush,450)}
+ async function migrate(){
+  if(!token){status('먼저 ♡ 일촌에서 간편 비밀번호로 잠금 해제해 줘. 이미 열려 있다면 잠갔다가 다시 로그인해 줘.');return}
+  if(remoteExists&&!confirm('온라인에 이미 자료가 있어. 지금 이 브라우저의 사진과 게시글로 덮어쓸까?'))return;
+  status('☁️ 기존 사진을 온라인으로 옮기는 중...');
+  try{const data=await uploadSnapshot(snapshot());await call('POST',{action:'save',content:data});remoteExists=true;
+   localStorage.setItem('minihome_cloud_migrated','yes');renderCloud(data);status('✓ 기존 사진·게시글 온라인 이전 완료! 이후 자동 저장돼 ♡');
+  }catch(e){status('⚠️ 온라인 이전 실패: '+e.message+' — 기존 브라우저 자료는 그대로 있어.')}
+ }
+ window.minihomeSync={enqueue,loadRemote};
+ document.getElementById('syncMigrate').onclick=migrate;
+ document.getElementById('syncReload').onclick=()=>{if(confirm('온라인 내용으로 현재 화면을 다시 불러올까? (아직 온라인으로 옮기지 않은 브라우저 자료는 유지해 줘)'))loadRemote(true)};
+ window.addEventListener('minihome-owner-unlocked',e=>authenticate(e.detail.password));
+ window.addEventListener('minihome-owner-locked',()=>{token='';sessionStorage.removeItem('minihome_cloud_token');status('온라인 저장 잠김')});
+ loadRemote();
+ // Visitors see new posts without a refresh; don't overwrite a locally editing owner.
+ setInterval(()=>{if(document.body.dataset.role!=='owner'&&!document.hidden)loadRemote(true)},15000);
+})();
+
+</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="./supabase-config.js"></script>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const cfg=window.MINIHOME_SUPABASE||{};
+const configured=cfg.url?.startsWith('https://') && cfg.anonKey?.length>30 && window.supabase;
+if(!configured){$('friendStatus').textContent='온라인 친구 기능을 쓰려면 supabase-config.js 설정과 schema.sql 실행이 필요해.';return;}
+const db=window.supabase.createClient(cfg.url,cfg.anonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+let me=null;
+const msg=(s)=>{$('friendStatus').textContent=s};
+const validUrl=(v)=>{try{const u=new URL(v);return ['https:','http:'].includes(u.protocol)}catch{return false}};
+const err=e=>{console.error(e);alert('처리 실패: '+(e.message||String(e)))};
+async function refreshAuth(){try{const {data:{user},error}=await db.auth.getUser();if(error && error.name!=='AuthSessionMissingError')throw error;me=user||null;$('friendAuth').hidden=!!me;$('friendLogout').hidden=!me;$('friendAccount').hidden=!me;if(!me){msg('로그인하면 친구 신청을 보내고 받을 수 있어.');return}msg('로그인 중: '+me.email);$('myFriendCode').textContent=me.id;const {data:p,error:pe}=await db.from('minihome_profiles').select('nickname,homepage').eq('id',me.id).maybeSingle();if(pe)throw pe;$('friendNickname').value=p?.nickname||'';$('friendHomepage').value=p?.homepage||'';await refreshFriends()}catch(e){err(e)}}
+$('friendLogin').onclick=async()=>{const email=$('friendEmail').value.trim();if(!email)return alert('이메일을 입력해 줘.');try{const {error}=await db.auth.signInWithOtp({email,emailRedirectTo:location.origin+location.pathname});if(error)throw error;msg('이메일로 보낸 로그인 링크를 확인해 줘.')}catch(e){err(e)}};
+$('friendLogout').onclick=async()=>{await db.auth.signOut();await refreshAuth()};
+$('copyFriendCode').onclick=async()=>{try{await navigator.clipboard.writeText(me.id);alert('친구 코드 복사 완료!')}catch{prompt('친구 코드를 복사해 줘.',me.id)}};
+$('friendSaveProfile').onclick=async()=>{if(!me)return;const nickname=$('friendNickname').value.trim(),homepage=$('friendHomepage').value.trim();if(!nickname)return alert('닉네임을 입력해 줘.');if(homepage&&!validUrl(homepage))return alert('올바른 http(s) 사이트 주소를 입력해 줘.');try{const {error}=await db.from('minihome_profiles').upsert({id:me.id,nickname,homepage});if(error)throw error;alert('친구 프로필을 저장했어.');await refreshFriends()}catch(e){err(e)}};
+$('friendRequest').onclick=async()=>{if(!me)return alert('먼저 로그인해 줘.');const target=$('friendTarget').value.trim();if(!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(target))return alert('친구의 UUID 코드를 입력해 줘.');if(target===me.id)return alert('자기 자신에게는 신청할 수 없어.');try{const {error}=await db.from('minihome_friendships').insert({requester_id:me.id,addressee_id:target});if(error)throw error;$('friendTarget').value='';alert('친구 신청을 보냈어!');await refreshFriends()}catch(e){err(e)}};
+const make=(tag,text)=>{const x=document.createElement(tag);if(text!==undefined)x.textContent=text;return x};
+function showList(id,rows,type,profiles){const root=$(id);root.replaceChildren();if(!rows.length){root.textContent='아직 없어 ♡';return}for(const f of rows){const other=type==='incoming'?f.requester_id:f.addressee_id;const person=profiles.get(other);const line=make('div');line.className='friend-entry';const left=make('div');left.append(make('strong',person?.nickname||'친구 '+other.slice(0,8)));if(person?.homepage && validUrl(person.homepage)){left.append(make('br'));const a=make('a','미니홈피 방문 ↗');a.href=person.homepage;a.target='_blank';a.rel='noopener noreferrer';left.append(a)}line.append(left);if(type==='incoming'){const actions=make('div');const accept=make('button','수락');accept.className='btn tiny';accept.onclick=()=>change(f.id,'accepted');const reject=make('button','거절');reject.className='btn secondary tiny';reject.onclick=()=>change(f.id,'rejected');actions.append(accept,reject);line.append(actions)}else if(type==='outgoing'){line.append(make('span','수락 대기 중'))}root.append(line)}}
+async function change(id,status){try{const {error}=await db.from('minihome_friendships').update({status}).eq('id',id).eq('addressee_id',me.id).eq('status','pending');if(error)throw error;await refreshFriends()}catch(e){err(e)}}
+async function refreshFriends(){if(!me)return;try{const {data:rows,error}=await db.from('minihome_friendships').select('id,requester_id,addressee_id,status').or('requester_id.eq.'+me.id+',addressee_id.eq.'+me.id);if(error)throw error;const ids=[...new Set((rows||[]).flatMap(f=>[f.requester_id,f.addressee_id]))];const profiles=new Map();if(ids.length){const {data:p,error:pe}=await db.from('minihome_profiles').select('id,nickname,homepage').in('id',ids);if(pe)throw pe;for(const x of p||[])profiles.set(x.id,x)}showList('friendIncoming',(rows||[]).filter(f=>f.addressee_id===me.id&&f.status==='pending'),'incoming',profiles);showList('friendOutgoing',(rows||[]).filter(f=>f.requester_id===me.id&&f.status==='pending'),'outgoing',profiles);showList('friendAccepted',(rows||[]).filter(f=>f.status==='accepted'),'accepted',profiles)}catch(e){err(e)}}
+$('friendRefresh').onclick=refreshFriends;
+db.auth.onAuthStateChange(()=>{setTimeout(refreshAuth,0)});
+refreshAuth();
+})();
+</script><script>
+/* Local-only demo unlock. Not a replacement for server-side authentication or RLS. */
+(()=>{
+ 'use strict';
+ const $=id=>document.getElementById(id);
+ const storageKey='minihome_local_owner_verifier_v1';
+ const sessionKey='minihome_local_owner_unlocked_v1';
+ const protectedIds=['settings','messages'];
+ const ownerOnly=['diaryForm','photoForm','presenceSelect'];
+ let unlocked=sessionStorage.getItem(sessionKey)==='yes' && !!localStorage.getItem(storageKey);
+ const hide=(node,yes)=>{if(node)node.style.setProperty('display',yes?'none':'','important')};
+ function applyRole(){
+  document.body.dataset.role=unlocked?'owner':'visitor';
+  document.querySelectorAll('[data-page]').forEach(b=>hide(b,protectedIds.includes(b.dataset.page)&&!unlocked));
+  protectedIds.forEach(id=>hide($(id),!unlocked));
+  ownerOnly.forEach(id=>hide($(id),!unlocked));
+  document.querySelectorAll('#diaryList button,#photoList button,#guestList button').forEach(b=>{
+   if((b.textContent.includes('삭제')||b.textContent.includes('수정')))hide(b,!unlocked);
+  });
+  $('localOwnerLogout').hidden=!unlocked;
+  $('localOwnerLogin').hidden=unlocked;
+  $('localOwnerPassword').hidden=unlocked;
+  $('localOwnerStatus').textContent=unlocked?'👑 주인장 모드야! 꾸미기와 기록을 수정할 수 있어 ♡':localStorage.getItem(storageKey)?'비밀번호를 입력해서 주인장 모드를 열어 줘 ♡':'처음이야! 사용할 비밀번호를 정해 줘 (8자 이상) ♡';
+  $('localOwnerLogin').textContent=localStorage.getItem(storageKey)?'비밀번호로 로그인 ♡':'주인장 비밀번호 설정 ♡';
+  const role=$('visitorRoleHint');if(role)role.textContent=unlocked?'👑 주인장 모드 · 수정 가능':'♡ 방문자 모드 · 구경 가능';
+  if(!unlocked&&document.querySelector('#settings.active,#messages.active'))document.querySelector('[data-page="home"]')?.click();
+ }
+ const nav=document.querySelector('nav.menu');
+ if(nav){const label=document.createElement('div');label.id='visitorRoleHint';label.style.cssText='font-size:10px;color:#897989;line-height:1.5;padding:10px 3px';nav.append(label)}
+ async function digest(value,salt){
+  const bytes=new TextEncoder().encode(salt+':'+value);
+  const hash=await crypto.subtle.digest('SHA-256',bytes);
+  return Array.from(new Uint8Array(hash),x=>x.toString(16).padStart(2,'0')).join('');
+ }
+ $('localOwnerLogin').onclick=async()=>{
+  const password=$('localOwnerPassword').value;
+  if(!password)return alert('비밀번호를 입력해 줘 ♡');
+  if(!crypto?.subtle)return alert('이 브라우저에서 암호 기능을 사용할 수 없어. HTTPS 사이트에서 열어 줘.');
+  try{
+   const existing=localStorage.getItem(storageKey);
+   if(!existing){
+    if(password.length<8)return alert('비밀번호는 8자 이상으로 정해 줘.');
+    const salt=Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('');
+    localStorage.setItem(storageKey,JSON.stringify({salt,hash:await digest(password,salt)}));
+   }else{
+    const record=JSON.parse(existing);
+    if(await digest(password,record.salt)!==record.hash)return alert('비밀번호가 달라 ㅠㅠ 다시 입력해 줘.');
+   }
+   sessionStorage.setItem(sessionKey,'yes');unlocked=true;$('localOwnerPassword').value='';applyRole();window.dispatchEvent(new CustomEvent('minihome-owner-unlocked',{detail:{password}}));
+   alert('주인장 모드 열렸어! ♡');
+  }catch(e){console.error(e);alert('브라우저 저장 기능을 확인해 줘.')} 
+ };
+ $('localOwnerPassword').addEventListener('keydown',e=>{if(e.key==='Enter')$('localOwnerLogin').click()});
+ $('localOwnerLogout').onclick=()=>{sessionStorage.removeItem(sessionKey);unlocked=false;applyRole();window.dispatchEvent(new Event('minihome-owner-locked'))};
+ document.addEventListener('click',e=>{
+  if(unlocked)return;
+  const btn=e.target.closest('button');if(!btn)return;
+  if(btn.closest('#settings,#messages,#diaryForm,#photoForm')||(btn.textContent.includes('삭제')&&btn.closest('#diaryList,#photoList,#guestList'))){e.stopImmediatePropagation();e.preventDefault()}
+ },true);
+ const observer=new MutationObserver(()=>applyRole());
+ ['diaryList','photoList','guestList'].forEach(id=>{const target=$(id);if(target)observer.observe(target,{childList:true,subtree:true})});
+ applyRole();
+})();
+</script><script>
+/* Shared comments: Supabase Auth + RLS. Secret text is never sent to unauthorized browsers. */
+(()=>{
+ const $=id=>document.getElementById(id),cfg=window.MINIHOME_SUPABASE||{};
+ const hint=$('commentOnlineHint'),button=$('commentAdd');
+ const ready=Boolean(window.supabase&&cfg.url?.startsWith('https://')&&cfg.anonKey?.length>30);
+ const db=ready?window.supabase.createClient(cfg.url,cfg.anonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
+ const ownerId=String(window.MINIHOME_OWNER_ID||'').toLowerCase();
+ const node=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+ let generation=0;
+ async function load(photoId){
+  const request=++generation,root=$('commentList');root.replaceChildren();
+  if(!db){root.append(node('p','hint','온라인 댓글 설정이 아직 완료되지 않았어.'));$('commentCount').textContent='0';return}
+  try{
+   const {data:rows,error}=await db.from('minihome_photo_comments').select('id,photo_id,author_id,nickname,body,is_secret,created_at').eq('photo_id',photoId).order('created_at',{ascending:true}).limit(200);
+   if(error)throw error;if(request!==generation||window.activePhoto!==undefined&&window.activePhoto!==photoId)return;
+   const {data:{user}}=await db.auth.getUser();const isOwner=!!user&&user.id.toLowerCase()===ownerId;
+   root.replaceChildren();$('commentCount').textContent=rows.length;
+   if(!rows.length)root.append(node('p','hint','첫 댓글을 남겨 봐 ♡'));
+   for(const c of rows){
+    const card=node('article','entry'),head=node('div','entry-head');
+    head.append(node('strong','',c.nickname+(c.is_secret?' 🔒':'')),node('span','',new Date(c.created_at).toLocaleString('ko-KR')));
+    card.append(head,node('p','',c.body));
+    if(isOwner){const del=node('button','btn secondary tiny','삭제');del.type='button';del.style.marginTop='8px';del.onclick=async()=>{if(!confirm('이 댓글을 삭제할까?'))return;const {error}=await db.from('minihome_photo_comments').delete().eq('id',c.id);if(error)alert('삭제 실패: '+error.message);else load(photoId)};card.append(del)}
+    root.append(card);
+   }
+  }catch(e){root.replaceChildren(node('p','hint','댓글 불러오기 실패: '+e.message));$('commentCount').textContent='–'}
+ }
+ async function submit(){
+  if(!db)return alert('먼저 Supabase를 연결해 줘.');
+  const photoId=typeof activePhoto!=='undefined'?activePhoto:null;
+  if(!photoId)return;
+  const nickname=$('commentName').value.trim(),body=$('commentBody').value.trim(),is_secret=$('commentSecret').checked;
+  if(!nickname||!body)return alert('닉네임과 댓글을 입력해 줘.');
+  button.disabled=true;
+  try{
+   const {data:{user}}=await db.auth.getUser();if(!user){alert('댓글을 쓰려면 ♡ 일촌 메뉴에서 이메일 로그인해 줘.');return}
+   const {error}=await db.from('minihome_photo_comments').insert({photo_id:photoId,author_id:user.id,nickname,body,is_secret});if(error)throw error;
+   $('commentBody').value='';$('commentSecret').checked=false;await load(photoId);
+  }catch(e){alert('댓글 저장 실패: '+e.message)}finally{button.disabled=false}
+ }
+ hint.textContent=ready?'댓글은 온라인으로 공유돼. 작성하려면 ♡ 일촌 메뉴에서 로그인해 줘. 비밀 댓글은 작성자와 주인장만 볼 수 있어.':'Supabase 연결 후 온라인 댓글을 사용할 수 있어.';
+ window.miniComments={load,submit};
+ db?.auth.onAuthStateChange(()=>{if(typeof activePhoto!=='undefined'&&activePhoto) setTimeout(()=>load(activePhoto),0)});
+})();
+</script></body></html>
