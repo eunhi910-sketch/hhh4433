@@ -1,22 +1,26 @@
-마이 미니홈피183 — GitHub / Netlify 설치
+마이 미니홈피183 — 설치 순서 (이 순서대로만 하면 돼요)
 
-1. GitHub 저장소에 이 폴더 안의 파일과 netlify 폴더를 그대로 올리세요.
-   중요: netlify/functions/minihome.js 경로를 유지하세요.
-2. Netlify 사이트에서 GitHub 저장소를 연결하여 배포하세요.
-3. Netlify > Keys and secrets에 아래 4개 환경 변수를 만드세요.
-   SUPABASE_URL = https://bcixligwqhlwvprayegh.supabase.co
-   SUPABASE_SERVICE_ROLE_KEY = Supabase의 서버 전용 secret/service_role 키
-   MINIHOME_OWNER_PASSWORD = 기존 주인장 간편 비밀번호와 동일한 값
-   MINIHOME_TOKEN_SECRET = 충분히 긴 임의의 비밀 문자열 (32자 이상 권장)
-   * 이 세 가지 비밀 값은 GitHub 파일이나 채팅에 넣지 마세요.
-4. 환경 변수를 저장한 뒤 Netlify에서 다시 배포하세요.
-5. 사이트를 기존 자료가 저장된 브라우저에서 열고 ♡ 일촌 > 간편 로그인 후
-   '내 기존 사진·게시글 온라인으로 옮기기'를 한 번 누르세요.
-6. '온라인 이전 완료' 표시를 확인한 다음 다른 기기에서 확인하세요.
+[A] Supabase (한 번만)
+ 1. Supabase 프로젝트 > SQL Editor > New query
+ 2. schema.sql 내용을 전부 붙여넣고 Run
+    → 방명록 / 다이어리·사진 저장 공간이 만들어져요.
 
-주의:
-- 기존 브라우저의 저장소를 삭제하지 마세요. 온라인 이전 전에 자료가 사라질 수 있습니다.
-- 이 패키지는 사진·다이어리·꾸미기·온라인 상태를 공유합니다.
-- 방명록/쪽지함은 기존 코드에서 로컬 또는 별도 기능이므로 모든 방문자에게 공유되는 것은 아닙니다.
-- 사진 댓글은 별도 Supabase 인증 및 정책에 따라 동작합니다.
-- 서버의 secret/service_role 키는 절대 공개하지 마세요.
+[B] GitHub
+ 3. 이 폴더 안의 파일을 그대로 GitHub 저장소에 올려요.
+    netlify/functions/minihome.js 경로가 꼭 유지돼야 해요.
+
+[C] Netlify
+ 4. 저장소를 연결해 배포해요.
+ 5. Site configuration > Environment variables 에 4개를 만들어요.
+    SUPABASE_URL = https://bcixligwqhlwvprayegh.supabase.co
+    SUPABASE_SERVICE_ROLE_KEY = Supabase의 secret / service_role 키
+    MINIHOME_OWNER_PASSWORD = 내가 정한 주인장 비밀번호
+    MINIHOME_TOKEN_SECRET = 아무 긴 문자열 (32자 이상)
+ 6. 저장 후 Deploys > Trigger deploy 로 반드시 다시 배포해요.
+
+[D] 사이트에서
+ 7. 기존 글/사진이 있던 브라우저에서 ♡ 일촌 > 주인장 모드 열기(비밀번호 = MINIHOME_OWNER_PASSWORD)
+ 8. '내 기존 사진·게시글 온라인으로 옮기기'를 한 번 누르고, '온라인 이전 완료'를 확인해요.
+    (이전 전에는 브라우저 데이터를 지우지 마세요.)
+
+주의: service_role 키는 GitHub 파일이나 채팅에 절대 넣지 마세요. Netlify 환경 변수에만 넣어요.

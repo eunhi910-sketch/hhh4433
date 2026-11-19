@@ -328,6 +328,7 @@ const d=new Date().toISOString().slice(0,10),visit=read('visit',{day:'',today:0,
  }
  async function authenticate(password){
   try{const data=await call('POST',{action:'login',password});token=data.token;sessionStorage.setItem('minihome_cloud_token',token);status('✓ 온라인 저장 인증 완료 ♡');
+   if(!remoteExists&&localHasContent())enqueue();
    if(!localHasContent())await loadRemote(true);
   }catch(e){token='';sessionStorage.removeItem('minihome_cloud_token');status('온라인 저장 로그인 실패: '+e.message+' (간편 로그인은 유지돼)')}
  }
@@ -343,7 +344,7 @@ const d=new Date().toISOString().slice(0,10),visit=read('visit',{day:'',today:0,
   return data;
  }
  async function flush(){
-  if(syncing||!token||!remoteExists)return;
+  if(syncing||blocked())return;
   syncing=true;pending=false;status('☁️ 변경 사항 온라인 저장 중...');
   try{const data=await uploadSnapshot(snapshot());await call('POST',{action:'save',content:data});
    // Update only image references in memory, without triggering new saves.
@@ -351,11 +352,12 @@ const d=new Date().toISOString().slice(0,10),visit=read('visit',{day:'',today:0,
    for(const item of photos){const next=data.photos?.find(p=>p.id===item.id);if(next)item.src=next.src;}
    for(const item of diaries){const next=data.diaries?.find(p=>p.id===item.id);if(next)item.image=next.image;}
    for(const k of keys)try{localStorage.setItem(KEY+k,JSON.stringify(({settings,diaries,photos,presence})[k]))}catch{}
-   lastError='';status('✓ 온라인 저장 완료 ♡');
+   remoteExists=true;try{localStorage.setItem('minihome_cloud_migrated','yes')}catch{}lastError='';status('✓ 온라인 저장 완료 ♡');
   }catch(e){lastError=e.message;status('⚠️ 온라인 저장 실패: '+e.message+' — 이 브라우저의 자료는 유지돼.');}
   finally{syncing=false;if(pending){clearTimeout(timer);timer=setTimeout(flush,500)}}
  }
- function enqueue(){if(!token||!remoteExists){if(document.body.dataset.role==='owner')status('⚠️ 온라인 저장 미연결. 기존 자료 옮기기 버튼을 먼저 눌러 줘.');return}pending=true;clearTimeout(timer);timer=setTimeout(flush,450)}
+ const blocked=()=>!token||(remoteExists&&localStorage.getItem('minihome_cloud_migrated')!=='yes');
+ function enqueue(){if(blocked()){if(document.body.dataset.role==='owner')status(token?'⚠️ 온라인에 이미 자료가 있어. 기존 자료 옮기기 버튼을 눌러 줘.':'⚠️ 온라인 저장 로그인이 안 됐어. ♡ 일촌에서 주인장 모드를 다시 열어 줘.');return}pending=true;clearTimeout(timer);timer=setTimeout(flush,450)}
  async function migrate(){
   if(!token){status('먼저 ♡ 일촌에서 간편 비밀번호로 잠금 해제해 줘. 이미 열려 있다면 잠갔다가 다시 로그인해 줘.');return}
   if(remoteExists&&!confirm('온라인에 이미 자료가 있어. 지금 이 브라우저의 사진과 게시글로 덮어쓸까?'))return;
